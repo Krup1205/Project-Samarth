@@ -1,4 +1,4 @@
-# 🌾 Smart Agriculture Data Insights — Flask QA System
+# 🌾 Project Samarth Prototype
 ### Prototype Project for **Build for Bharat Fellowship - 2026 Cohort (Data Science)**
 
 ---
@@ -49,7 +49,7 @@ This prototype was developed as part of the **Build for Bharat Fellowship 2026 (
 
 ## 📂 Project Structure
 
-📦 flask-qa-app
+📦 Project Samarth
 ├── app.py # Flask main app
 ├── qa_engine.py # Core QA logic
 ├── db.sqlite3 # Local database
@@ -95,15 +95,3 @@ Compare production of Rice and Wheat	Compares two crops across years
 Show trend of Maize	Displays the production trend of a single crop
 Average annual rainfall for the last 5 years	Shows rainfall averages
 Compare production of Tea and Coffee	Example of adding custom crop data
-
-🌱 Future Enhancements
-Add AI-powered question understanding (LLM/NLP integration)
-
-Include data visualizations (charts/graphs)
-
-Build user-upload feature for custom datasets
-
-Deploy to Render / HuggingFace Spaces / GitHub Pages (with backend)
-
-🙌 Acknowledgement
-This project was developed as part of the Build for Bharat Fellowship 2026 (Data Science Cohort), aiming to demonstrate data-driven prototypes that contribute to India’s sustainable agricultural growth.
