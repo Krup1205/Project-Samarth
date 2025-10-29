@@ -61,9 +61,6 @@ This prototype was developed as part of the **Build for Bharat Fellowship 2026 (
 ├── requirements.txt # Dependencies
 └── README.md # Project info
 
-yaml
-Copy code
-
 ---
 
 ## ⚙️ Setup Instructions
