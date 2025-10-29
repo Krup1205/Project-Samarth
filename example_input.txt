@@ -1,0 +1,3 @@
+Compare production of Rice and Wheat
+Show trend of Rice
+Average annual rainfall for the last 5 years
