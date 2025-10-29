@@ -1,25 +1,109 @@
-# Project Samarth Prototype
+# 🌾 Smart Agriculture Data Insights — Flask QA System
+### Prototype Project for **Build for Bharat Fellowship - 2026 Cohort (Data Science)**
 
-Drop your data CSV files into the `data/` folder:
-- `data/rainfall_data.csv` (year-wise rainfall; columns like YEAR, ANNUAL or monthly columns)
-- `data/crop_production.csv` (year-wise crop production; first column Year and other crop columns)
+---
 
-Then run:
+## 📘 Overview
 
+This project is a **Flask-based Question Answering (QA) Web Application** designed to analyze agricultural datasets and provide instant insights.  
+Users can ask questions about crop production, rainfall patterns, and agricultural trends, and the system fetches relevant data from a SQLite database and presents clean tabular results.
+
+This prototype was developed as part of the **Build for Bharat Fellowship 2026 (Data Science Track)** — focusing on empowering farmers and policymakers with easy access to data-driven insights.
+
+---
+
+## 🚀 Features
+
+- 🧠 **Natural Question Understanding**  
+  Ask questions in plain English like:  
+  - “Compare production of Rice and Wheat”  
+  - “Show trend of Maize”  
+  - “Average annual rainfall for the last 5 years”
+
+- 📊 **Dynamic Data Querying**  
+  Automatically fetches relevant data from a SQLite database and computes averages, trends, and comparisons.
+
+- 🌦️ **Multi-domain Support**  
+  Works for both **crop production** and **climate data** (rainfall, etc.)
+
+- 💬 **Interactive Web Interface**  
+  Simple, fast, and responsive Flask frontend built with HTML + CSS + JS.
+
+- 🧩 **Extendable**  
+  Easy to add more question types or datasets (e.g., tea, wheat, sugarcane, etc.)
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|------------|-------------|
+| Backend | Python (Flask) |
+| Database | SQLite3 |
+| Data Processing | Pandas |
+| Fuzzy Matching | FuzzyWuzzy |
+| Frontend | HTML, CSS, JavaScript |
+| Visualization | Tabulate, Pandas |
+
+---
+
+## 📂 Project Structure
+
+📦 flask-qa-app
+├── app.py # Flask main app
+├── qa_engine.py # Core QA logic
+├── db.sqlite3 # Local database
+├── templates/
+│ └── index.html # Frontend page
+├── static/
+│ └── style.css # Styling (optional)
+├── example_input.txt # Sample questions
+├── requirements.txt # Dependencies
+└── README.md # Project info
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/Krup1205/flask-qa-app.git
+cd flask-qa-app
+2️⃣ Create a virtual environment
+bash
+Copy code
 python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-# source venv/bin/activate
-
+venv\Scripts\activate  # (Windows)
+source venv/bin/activate  # (Mac/Linux)
+3️⃣ Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
-
-# load CSVs into SQLite
-python load_to_db.py
-
-# run demo
+4️⃣ Run the app
+bash
+Copy code
 python app.py
-```
+5️⃣ Open in your browser
+Visit 👉 http://127.0.0.1:5000
 
-Open http://127.0.0.1:5000 in your browser.
+💡 Example Questions
+Example	Description
+Compare production of Rice and Wheat	Compares two crops across years
+Show trend of Maize	Displays the production trend of a single crop
+Average annual rainfall for the last 5 years	Shows rainfall averages
+Compare production of Tea and Coffee	Example of adding custom crop data
+
+🌱 Future Enhancements
+Add AI-powered question understanding (LLM/NLP integration)
+
+Include data visualizations (charts/graphs)
+
+Build user-upload feature for custom datasets
+
+Deploy to Render / HuggingFace Spaces / GitHub Pages (with backend)
+
+🙌 Acknowledgement
+This project was developed as part of the Build for Bharat Fellowship 2026 (Data Science Cohort), aiming to demonstrate data-driven prototypes that contribute to India’s sustainable agricultural growth.
